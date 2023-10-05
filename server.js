@@ -4,9 +4,12 @@ const express = require("express");
 const mongoose = require("mongoose");
 const itemsRoutes = require("./routes/items");
 const categoriesRoutes = require("./routes/categories");
+const cors = require('cors');
+
 
 
 const app = express();
+app.use(cors());
 
 app.use(express.json());
 
